@@ -17,13 +17,13 @@ body {
     background: #f7f7f5;
 }
 
-.nb-b {
+.header {
     width: 100%;
     height: 44px;
     background-color: #2f2f2f;
 }
 
-.nb {
+.header-list {
     width: 1200px;
     height: 44px;
     margin: 0 auto;
@@ -31,26 +31,19 @@ body {
     justify-content: space-between;
 }
 
-.nb-icon {
+.header-icon {
     width: 110px;
     height: 44px;
     padding: 11px 0;
     background: url(img/logo.jpg) no-repeat center left / 76px 22px;
 }
 
-.nb-text-list {
+.header-text-list {
     width: 720px;
     height: 44px;
 }
 
-.nb-right {
-    width: 110px;
-    height: 44px;
-    padding: 11px 0;
-    background: url(img/search.jpg) no-repeat right center / 107px 22px;
-}
-
-.nb-text {
+.header-text {
     height: 44px;
     color: rgb(250, 250, 250);
     font-size: 14px;
@@ -61,32 +54,39 @@ body {
     text-decoration: none;
 }
 
-.nb-text:nth-child(1) {
+.header-text:nth-child(1) {
     width: 122px;
 }
 
-.nb-text:nth-child(2) {
+.header-text:nth-child(2) {
     width: 97px;
 }
 
-.nb-text:nth-child(3) {
+.header-text:nth-child(3) {
     width: 96px;
 }
 
-.nb-text:nth-child(4) {
+.header-text:nth-child(4) {
     width: 87px;
 }
 
-.nb-text:nth-child(5) {
+.header-text:nth-child(5) {
     width: 122px;
 }
 
-.nb-text:nth-child(6) {
+.header-text:nth-child(6) {
     width: 87px;
 }
 
-.nb-text:nth-child(7) {
+.header-text:nth-child(7) {
     width: 87px;
+}
+
+.header-right {
+    width: 110px;
+    height: 44px;
+    padding: 11px 0;
+    background: url(img/search.jpg) no-repeat right center / 107px 22px;
 }
 
 .shop-head {
@@ -124,6 +124,10 @@ body {
     line-height: 21px;
 }
 
+.promise .icon-shop img {
+    margin-right: 6px;
+}
+
 .help-warp {
     position: absolute;
     right: 0;
@@ -135,6 +139,10 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #6c7880;
+}
+
+.help-warp .icon-shop img {
+    margin-right: 4px;
 }
 
 .banner {
@@ -149,24 +157,19 @@ body {
     height: 450px;
 }
 
-.cl {
+.shop-container {
     width: 1200px;
     margin: 0 auto;
 }
 
-.floor-list {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.fp4 {
+.banner-floor {
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: space-between;
 }
 
-.fp4-list {
+.floor-list {
     display: block;
     width: 293px;
     height: 140px;
@@ -179,7 +182,7 @@ body {
     height: 140px;
 }
 
-.c_3 {
+.center-product {
     width: 100%;
     height: 608px;
 }
@@ -213,7 +216,7 @@ body {
     color: #333;
 }
 
-.box-list {
+.box-product {
     width: 100%;
     height: 521px;
     display: flex;
@@ -275,31 +278,46 @@ body {
     font-weight: 500;
 }
 
-.c_6 {
+.center-sample {
     width: 100%;
     height: 867px;
 }
 
-.b-list {
+.sample-list {
     width: 100%;
     height: 780px;
 }
 
-.b-top {
+.sample-top {
     width: 100%;
     height: 390px;
     display: flex;
     justify-content: space-between;
 }
 
-.b-bottom {
+.sample-top .sample-item:nth-child(1) {
+    width: 595px;
+    height: 380px;
+}
+
+.sample-top .sample-item:nth-child(1) .item-pic {
+    height: 100%;
+}
+
+.sample-top .sample-item:nth-child(1) .item-pic img {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+}
+
+.sample-bottom {
     width: 100%;
     height: 390px;
     display: flex;
     justify-content: space-between;
 }
 
-.bo {
+.sample-item {
     width: 293px;
     height: 380px;
     margin-bottom: 10px;
@@ -307,13 +325,13 @@ body {
     text-align: center;
 }
 
-.li-pic {
+.item-pic {
     display: block;
     width: 100%;
     height: 215px;
 }
 
-.li-pic img {
+.item-pic img {
     display: block;
     width: 172px;
     height: 215px;
@@ -321,7 +339,7 @@ body {
     padding-top: 43px;
 }
 
-.bo h2 {
+.sample-item h2 {
     width: 293px;
     height: 44px;
     padding-top: 19px;
@@ -330,7 +348,7 @@ body {
     line-height: 25px;
 }
 
-.bo h6 {
+.sample-item h6 {
     width: 293px;
     height: 59px;
     font-size: 12px;
@@ -338,7 +356,7 @@ body {
     line-height: 40px;
 }
 
-.bo p {
+.sample-item p {
     width: 293px;
     height: 30px;
     font-size: 16px;
@@ -347,17 +365,3 @@ body {
     color: red;
 }
 
-.b-top .bo:nth-child(1) {
-    width: 595px;
-    height: 380px;
-}
-
-.b-top .bo:nth-child(1) .li-pic {
-    height: 100%;
-}
-
-.b-top .bo:nth-child(1) .li-pic img {
-    width: 100%;
-    height: 100%;
-    padding-top: 0;
-}
